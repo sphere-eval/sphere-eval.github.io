@@ -14624,5 +14624,142 @@
             "Writing"
         ],
         "ID":"114"
+    },
+    {
+        "Paper":"Beyond the Chat: Executable and Verifiable Text-Editing with LLMs",
+        "URL":"https:\/\/arxiv.org\/abs\/2309.15337",
+        "Year":2024,
+        "Writing Stage":[
+            "Drafting",
+            "Revision"
+        ],
+        "Writing Context":[
+            "Technical",
+            "Professional",
+            "Personal"
+        ],
+        "Purpose":[
+            "Descriptive",
+            "Persuasive",
+            "Entertainment"
+        ],
+        "Specificity":[
+            "Specific Objectives"
+        ],
+        "Audience":[
+            "Specified"
+        ],
+        "Demographic Profile - Design":[
+            "Profession"
+        ],
+        "Demographic Profile - Evaluation":[
+            "Profession"
+        ],
+        "System Output Preferences - Design":[
+
+        ],
+        "System Output Preferences - Evaluation":[
+
+        ],
+        "Relationship to System - Design":[
+            "Agency",
+            "Ownership",
+            "Trust",
+            "Transparency"
+        ],
+        "Relationship to System - Evaluation":[
+            "Agency",
+            "Ownership",
+            "Trust",
+            "Transparency"
+        ],
+        "User Capabilities - Design":[
+
+        ],
+        "User Capabilities - Evaluation":[
+
+        ],
+        "Data - Source":[
+
+        ],
+        "Data - Size":[
+
+        ],
+        "Model - Type":[
+            "Foundation model"
+        ],
+        "Model - External Resource Access":[
+            "Tool"
+        ],
+        "Learning - Problem":[
+
+        ],
+        "Learning - Algorithm":[
+
+        ],
+        "Learning - Training and Adaptation":[
+
+        ],
+        "Evaluation - Evaluator":[
+            "Human evaluation"
+        ],
+        "Evaluation - Focus":[
+            "Linguistic quality",
+            "Style & adequacy"
+        ],
+        "Scalability":[
+            "Latency"
+        ],
+        "User - Steering the System":[
+            "Explicit"
+        ],
+        "User - Integrating System Output":[
+            "Selection"
+        ],
+        "UI - Interface Paradigm":[
+            "Text editor"
+        ],
+        "UI - Layout":[
+            "Writing area"
+        ],
+        "UI - Visual Differentiation":[
+            "Formatting",
+            "Location"
+        ],
+        "UI - Interaction Metaphor":[
+            "Tool"
+        ],
+        "UI - Initiation":[
+            "User-initiated",
+            "System-initiated"
+        ],
+        "System - Output Type":[
+            "Proposal"
+        ],
+        "System - Curation Type":[
+            "Model"
+        ],
+        "System - User Data Access":[
+            "Input text"
+        ],
+        "Digital Infrastructure":[
+            "Usability consistency"
+        ],
+        "Social Factors":[
+
+        ],
+        "Locale":[
+
+        ],
+        "Access Model":[
+            "Free and open-source software"
+        ],
+        "Norms & Rules":[
+
+        ],
+        "Change Over Time":[
+
+        ],
+        "ID":"115"
     }
 ]

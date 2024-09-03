@@ -13,6 +13,11 @@ This is the repository for the website of the paper [A Design Space for Intellig
 
 We will try to monitor the form and PR regularly, but in case there is considerable delay, please feel free to send an email to Mina.
 
+For those who have direct edit access to the repository, you can follow the steps below to update the website:
+1. Update `./data/annotated_papers.csv` with the new paper information.
+2. Run `./data/convert_json.py` to convert the CSV file to JSON.
+3. Test the website locally (`npm run dev`) to make sure the new paper is displayed correctly.
+
 #### Contact
 
 * Maintenance: [Mina Lee](https://minalee.info/) \<mnlee@uchicago.edu\>
