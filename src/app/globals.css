@@ -97,22 +97,22 @@
   max-width: 900px;
 }
 
-.dsiiwa-task-color {
-  color: #1c91bd;
-}
+.sphere-what-color {
+  color: #ed624a;
+}  
 
-.dsiiwa-user-color {
+.sphere-how-color {
   color: #f19c00;
 }
 
-.dsiiwa-technology-color {
-  color: #4455aa;
-}
-
-.dsiiwa-interaction-color {
-  color: #ed624a;
-}
-
-.dsiiwa-ecosystem-color {
+.sphere-who-color {
   color: #125434;
+}
+
+.sphere-when-color {
+  color: #1c91bd;
+}  
+
+.sphere-metahow-color {
+  color: #4455aa;
 }

@@ -1,1019 +1,121 @@
 [
     {
-        "name": "Writing Stage",
-        "category": "task",
+        "name": "Component",
+        "category": "what",
         "values": [
             {
-                "value": "Revision",
-                "label": "Revision"
+                "value": "model",
+                "label": "model"
             },
             {
-                "value": "Drafting",
-                "label": "Drafting"
-            },
-            {
-                "value": "Planning",
-                "label": "Planning"
-            },
-            {
-                "value": "Idea generation",
-                "label": "Idea generation"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
+                "value": "system",
+                "label": "system"
             }
         ]
     },
     {
-        "name": "Writing Context",
-        "category": "task",
+        "name": "Design Goal",
+        "category": "what",
         "values": [
             {
-                "value": "Creative",
-                "label": "Creative"
+                "value": "effectiveness",
+                "label": "effectiveness"
             },
             {
-                "value": "Personal",
-                "label": "Personal"
+                "value": "efficiency",
+                "label": "efficiency"
             },
             {
-                "value": "Technical",
-                "label": "Technical"
-            },
-            {
-                "value": "Academic",
-                "label": "Academic"
-            },
-            {
-                "value": "Journalistic",
-                "label": "Journalistic"
-            },
-            {
-                "value": "Professional",
-                "label": "Professional"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
+                "value": "satisfaction",
+                "label": "satisfaction"
             }
         ]
     },
     {
-        "name": "Purpose",
-        "category": "task",
+        "name": "Scope",
+        "category": "how",
         "values": [
             {
-                "value": "Persuasive",
-                "label": "Persuasive"
+                "value": "intrinsic",
+                "label": "intrinsic"
             },
             {
-                "value": "Translation",
-                "label": "Translation"
-            },
-            {
-                "value": "Entertainment",
-                "label": "Entertainment"
-            },
-            {
-                "value": "Descriptive",
-                "label": "Descriptive"
-            },
-            {
-                "value": "Feedback",
-                "label": "Feedback"
-            },
-            {
-                "value": "Accessibility",
-                "label": "Accessibility"
-            },
-            {
-                "value": "Expository",
-                "label": "Expository"
-            },
-            {
-                "value": "Narrative",
-                "label": "Narrative"
-            },
-            {
-                "value": "Educational",
-                "label": "Educational"
-            },
-            {
-                "value": "Analytical",
-                "label": "Analytical"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
+                "value": "extrinsic",
+                "label": "extrinsic"
             }
         ]
     },
     {
-        "name": "Specificity",
-        "category": "task",
+        "name": "Method",
+        "category": "how",
         "values": [
             {
-                "value": "Detailed Requirements",
-                "label": "Detailed Requirements"
+                "value": "qualitative",
+                "label": "qualitative"
             },
             {
-                "value": "General Direction",
-                "label": "General Direction"
-            },
-            {
-                "value": "Specific Objectives",
-                "label": "Specific Objectives"
-            },
-            {
-                "value": "Nonspecific",
-                "label": "Nonspecific"
+                "value": "quantitative",
+                "label": "quantitative"
             }
         ]
     },
     {
-        "name": "Audience",
-        "category": "task",
+        "name": "Human",
+        "category": "who",
         "values": [
             {
-                "value": "Specified",
-                "label": "Specified"
+                "value": "expert",
+                "label": "expert"
             },
             {
-                "value": "Implied",
-                "label": "Implied"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
+                "value": "user",
+                "label": "user"
             }
         ]
     },
     {
-        "name": "Demographic Profile - Design",
-        "category": "user",
+        "name": "Automated",
+        "category": "who",
         "values": [
             {
-                "value": "Socioeconomic status",
-                "label": "Socioeconomic status"
+                "value": "static",
+                "label": "static"
             },
             {
-                "value": "Language & culture",
-                "label": "Language & culture"
-            },
-            {
-                "value": "Age",
-                "label": "Age"
-            },
-            {
-                "value": "Race",
-                "label": "Race"
-            },
-            {
-                "value": "Gender",
-                "label": "Gender"
-            },
-            {
-                "value": "Education",
-                "label": "Education"
-            },
-            {
-                "value": "Profession",
-                "label": "Profession"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
+                "value": "generative",
+                "label": "generative"
             }
         ]
     },
     {
-        "name": "Demographic Profile - Evaluation",
-        "category": "user",
+        "name": "Time Scale",
+        "category": "when",
         "values": [
             {
-                "value": "Socioeconomic status",
-                "label": "Socioeconomic status"
+                "value": "longterm",
+                "label": "longterm"
             },
             {
-                "value": "Language & culture",
-                "label": "Language & culture"
+                "value": "instant",
+                "label": "instant"
             },
             {
-                "value": "Age",
-                "label": "Age"
-            },
-            {
-                "value": "Gender",
-                "label": "Gender"
-            },
-            {
-                "value": "Education",
-                "label": "Education"
-            },
-            {
-                "value": "Profession",
-                "label": "Profession"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
+                "value": "shortterm",
+                "label": "shortterm"
             }
         ]
     },
     {
-        "name": "System Output Preferences - Design",
-        "category": "user",
+        "name": "Validation",
+        "category": "meta-how",
         "values": [
             {
-                "value": "Textual coherence",
-                "label": "Textual coherence"
+                "value": "reliability",
+                "label": "reliability"
             },
             {
-                "value": "Personalization",
-                "label": "Personalization"
-            },
-            {
-                "value": "Bias",
-                "label": "Bias"
-            },
-            {
-                "value": "Explainability",
-                "label": "Explainability"
-            },
-            {
-                "value": "Textual diversity",
-                "label": "Textual diversity"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "System Output Preferences - Evaluation",
-        "category": "user",
-        "values": [
-            {
-                "value": "Textual coherence",
-                "label": "Textual coherence"
-            },
-            {
-                "value": "Personalization",
-                "label": "Personalization"
-            },
-            {
-                "value": "Bias",
-                "label": "Bias"
-            },
-            {
-                "value": "Explainability",
-                "label": "Explainability"
-            },
-            {
-                "value": "Textual diversity",
-                "label": "Textual diversity"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "Relationship to System - Design",
-        "category": "user",
-        "values": [
-            {
-                "value": "Transparency",
-                "label": "Transparency"
-            },
-            {
-                "value": "Integrity",
-                "label": "Integrity"
-            },
-            {
-                "value": "Availability",
-                "label": "Availability"
-            },
-            {
-                "value": "Trust",
-                "label": "Trust"
-            },
-            {
-                "value": "Privacy",
-                "label": "Privacy"
-            },
-            {
-                "value": "Ownership",
-                "label": "Ownership"
-            },
-            {
-                "value": "Agency",
-                "label": "Agency"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "Relationship to System - Evaluation",
-        "category": "user",
-        "values": [
-            {
-                "value": "Transparency",
-                "label": "Transparency"
-            },
-            {
-                "value": "Availability",
-                "label": "Availability"
-            },
-            {
-                "value": "Trust",
-                "label": "Trust"
-            },
-            {
-                "value": "Privacy",
-                "label": "Privacy"
-            },
-            {
-                "value": "Ownership",
-                "label": "Ownership"
-            },
-            {
-                "value": "Agency",
-                "label": "Agency"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "User Capabilities - Design",
-        "category": "user",
-        "values": [
-            {
-                "value": "Empathy",
-                "label": "Empathy"
-            },
-            {
-                "value": "Cognition",
-                "label": "Cognition"
-            },
-            {
-                "value": "Writing expertise",
-                "label": "Writing expertise"
-            },
-            {
-                "value": "Emotion",
-                "label": "Emotion"
-            },
-            {
-                "value": "Efficiency",
-                "label": "Efficiency"
-            },
-            {
-                "value": "Creativity",
-                "label": "Creativity"
-            },
-            {
-                "value": "Neurodiversity",
-                "label": "Neurodiversity"
-            },
-            {
-                "value": "Confidence",
-                "label": "Confidence"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "User Capabilities - Evaluation",
-        "category": "user",
-        "values": [
-            {
-                "value": "Empathy",
-                "label": "Empathy"
-            },
-            {
-                "value": "Cognition",
-                "label": "Cognition"
-            },
-            {
-                "value": "Writing expertise",
-                "label": "Writing expertise"
-            },
-            {
-                "value": "Emotion",
-                "label": "Emotion"
-            },
-            {
-                "value": "Technical proficiency",
-                "label": "Technical proficiency"
-            },
-            {
-                "value": "Efficiency",
-                "label": "Efficiency"
-            },
-            {
-                "value": "Creativity",
-                "label": "Creativity"
-            },
-            {
-                "value": "Neurodiversity",
-                "label": "Neurodiversity"
-            },
-            {
-                "value": "Confidence",
-                "label": "Confidence"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "Data - Source",
-        "category": "technology",
-        "values": [
-            {
-                "value": "User",
-                "label": "User"
-            },
-            {
-                "value": "Authors",
-                "label": "Authors"
-            },
-            {
-                "value": "Crowdworker",
-                "label": "Crowdworker"
-            },
-            {
-                "value": "Machine",
-                "label": "Machine"
-            },
-            {
-                "value": "Expert",
-                "label": "Expert"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "Data - Size",
-        "category": "technology",
-        "values": [
-            {
-                "value": "Large (<1M)",
-                "label": "Large (<1M)"
-            },
-            {
-                "value": "Medium (<10k)",
-                "label": "Medium (<10k)"
-            },
-            {
-                "value": "Extremely large (>1M)",
-                "label": "Extremely large (>1M)"
-            },
-            {
-                "value": "Small (<100)",
-                "label": "Small (<100)"
-            },
-            {
-                "value": "Unknown",
-                "label": "Unknown"
-            }
-        ]
-    },
-    {
-        "name": "Model - Type",
-        "category": "technology",
-        "values": [
-            {
-                "value": "Rule-based model",
-                "label": "Rule-based model"
-            },
-            {
-                "value": "Foundation model",
-                "label": "Foundation model"
-            },
-            {
-                "value": "Statistical ML model",
-                "label": "Statistical ML model"
-            },
-            {
-                "value": "Deep neural network",
-                "label": "Deep neural network"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "Model - External Resource Access",
-        "category": "technology",
-        "values": [
-            {
-                "value": "Tool",
-                "label": "Tool"
-            },
-            {
-                "value": "Data",
-                "label": "Data"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "Learning - Problem",
-        "category": "technology",
-        "values": [
-            {
-                "value": "Classification",
-                "label": "Classification"
-            },
-            {
-                "value": "Generation",
-                "label": "Generation"
-            },
-            {
-                "value": "Regression",
-                "label": "Regression"
-            },
-            {
-                "value": "Structured prediction",
-                "label": "Structured prediction"
-            },
-            {
-                "value": "Retrieval",
-                "label": "Retrieval"
-            },
-            {
-                "value": "Rewriting",
-                "label": "Rewriting"
-            }
-        ]
-    },
-    {
-        "name": "Learning - Algorithm",
-        "category": "technology",
-        "values": [
-            {
-                "value": "Reinforcement learning",
-                "label": "Reinforcement learning"
-            },
-            {
-                "value": "Supervised learning",
-                "label": "Supervised learning"
-            },
-            {
-                "value": "Unsupervised learning",
-                "label": "Unsupervised learning"
-            },
-            {
-                "value": "Self-supervised learning",
-                "label": "Self-supervised learning"
-            }
-        ]
-    },
-    {
-        "name": "Learning - Training and Adaptation",
-        "category": "technology",
-        "values": [
-            {
-                "value": "Tuning decoding parameters",
-                "label": "Tuning decoding parameters"
-            },
-            {
-                "value": "Prompt Engineering",
-                "label": "Prompt Engineering"
-            },
-            {
-                "value": "Fine-tuning",
-                "label": "Fine-tuning"
-            },
-            {
-                "value": "Training from scratch",
-                "label": "Training from scratch"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "Evaluation - Evaluator",
-        "category": "technology",
-        "values": [
-            {
-                "value": "Human-machine evaluation",
-                "label": "Human-machine evaluation"
-            },
-            {
-                "value": "Automatic evaluation",
-                "label": "Automatic evaluation"
-            },
-            {
-                "value": "Human evaluation",
-                "label": "Human evaluation"
-            },
-            {
-                "value": "Machine-learned evaluation",
-                "label": "Machine-learned evaluation"
-            }
-        ]
-    },
-    {
-        "name": "Evaluation - Focus",
-        "category": "technology",
-        "values": [
-            {
-                "value": "Style & adequacy",
-                "label": "Style & adequacy"
-            },
-            {
-                "value": "Linguistic quality",
-                "label": "Linguistic quality"
-            },
-            {
-                "value": "Controllability",
-                "label": "Controllability"
-            },
-            {
-                "value": "Ethics",
-                "label": "Ethics"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "Scalability",
-        "category": "technology",
-        "values": [
-            {
-                "value": "Cost",
-                "label": "Cost"
-            },
-            {
-                "value": "Latency",
-                "label": "Latency"
-            }
-        ]
-    },
-    {
-        "name": "User - Steering the System",
-        "category": "interaction",
-        "values": [
-            {
-                "value": "Implicit",
-                "label": "Implicit"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            },
-            {
-                "value": "Explicit",
-                "label": "Explicit"
-            },
-            {
-                "value": "No control",
-                "label": "No control"
-            }
-        ]
-    },
-    {
-        "name": "User - Integrating System Output",
-        "category": "interaction",
-        "values": [
-            {
-                "value": "Editing",
-                "label": "Editing"
-            },
-            {
-                "value": "Selection",
-                "label": "Selection"
-            },
-            {
-                "value": "Inspiration",
-                "label": "Inspiration"
-            },
-            {
-                "value": "No integration",
-                "label": "No integration"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "UI - Interface Paradigm",
-        "category": "interaction",
-        "values": [
-            {
-                "value": "Chatbot",
-                "label": "Chatbot"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            },
-            {
-                "value": "Text editor",
-                "label": "Text editor"
-            }
-        ]
-    },
-    {
-        "name": "UI - Layout",
-        "category": "interaction",
-        "values": [
-            {
-                "value": "Separated",
-                "label": "Separated"
-            },
-            {
-                "value": "Custom",
-                "label": "Custom"
-            },
-            {
-                "value": "Input UI",
-                "label": "Input UI"
-            },
-            {
-                "value": "Writing area",
-                "label": "Writing area"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "UI - Visual Differentiation",
-        "category": "interaction",
-        "values": [
-            {
-                "value": "Formatting",
-                "label": "Formatting"
-            },
-            {
-                "value": "Media type",
-                "label": "Media type"
-            },
-            {
-                "value": "Location",
-                "label": "Location"
-            },
-            {
-                "value": "None",
-                "label": "None"
-            }
-        ]
-    },
-    {
-        "name": "UI - Interaction Metaphor",
-        "category": "interaction",
-        "values": [
-            {
-                "value": "Tool",
-                "label": "Tool"
-            },
-            {
-                "value": "Hybrid",
-                "label": "Hybrid"
-            },
-            {
-                "value": "Agent",
-                "label": "Agent"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "UI - Initiation",
-        "category": "interaction",
-        "values": [
-            {
-                "value": "System-initiated",
-                "label": "System-initiated"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            },
-            {
-                "value": "User-initiated",
-                "label": "User-initiated"
-            }
-        ]
-    },
-    {
-        "name": "System - Output Type",
-        "category": "interaction",
-        "values": [
-            {
-                "value": "Generation",
-                "label": "Generation"
-            },
-            {
-                "value": "Analysis",
-                "label": "Analysis"
-            },
-            {
-                "value": "Proposal",
-                "label": "Proposal"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "System - Curation Type",
-        "category": "interaction",
-        "values": [
-            {
-                "value": "Curated",
-                "label": "Curated"
-            },
-            {
-                "value": "Model",
-                "label": "Model"
-            },
-            {
-                "value": "Deterministic",
-                "label": "Deterministic"
-            },
-            {
-                "value": "Customized",
-                "label": "Customized"
-            }
-        ]
-    },
-    {
-        "name": "System - User Data Access",
-        "category": "interaction",
-        "values": [
-            {
-                "value": "Additional data",
-                "label": "Additional data"
-            },
-            {
-                "value": "Input text",
-                "label": "Input text"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "Digital Infrastructure",
-        "category": "ecosystem",
-        "values": [
-            {
-                "value": "Technical interoperability",
-                "label": "Technical interoperability"
-            },
-            {
-                "value": "Usability consistency",
-                "label": "Usability consistency"
-            }
-        ]
-    },
-    {
-        "name": "Social Factors",
-        "category": "ecosystem",
-        "values": [
-            {
-                "value": "Designing with stakeholders",
-                "label": "Designing with stakeholders"
-            },
-            {
-                "value": "Designing for social writing",
-                "label": "Designing for social writing"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "Locale",
-        "category": "ecosystem",
-        "values": [
-            {
-                "value": "Other",
-                "label": "Other"
-            },
-            {
-                "value": "Local writing",
-                "label": "Local writing"
-            },
-            {
-                "value": "Remote writing",
-                "label": "Remote writing"
-            }
-        ]
-    },
-    {
-        "name": "Access Model",
-        "category": "ecosystem",
-        "values": [
-            {
-                "value": "Other",
-                "label": "Other"
-            },
-            {
-                "value": "Commercial software",
-                "label": "Commercial software"
-            },
-            {
-                "value": "Free and open-source software",
-                "label": "Free and open-source software"
-            }
-        ]
-    },
-    {
-        "name": "Norms & Rules",
-        "category": "ecosystem",
-        "values": [
-            {
-                "value": "Conventions",
-                "label": "Conventions"
-            },
-            {
-                "value": "Laws",
-                "label": "Laws"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ]
-    },
-    {
-        "name": "Change Over Time",
-        "category": "ecosystem",
-        "values": [
-            {
-                "value": "Authors",
-                "label": "Authors"
-            },
-            {
-                "value": "Writing",
-                "label": "Writing"
-            },
-            {
-                "value": "Technologies",
-                "label": "Technologies"
-            },
-            {
-                "value": "Information environment",
-                "label": "Information environment"
-            },
-            {
-                "value": "Regulation",
-                "label": "Regulation"
-            },
-            {
-                "value": "Readers",
-                "label": "Readers"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
+                "value": "validity",
+                "label": "validity"
             }
         ]
     }

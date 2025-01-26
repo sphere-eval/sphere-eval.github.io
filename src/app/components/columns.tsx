@@ -117,6 +117,16 @@ const paperDataColumns: ColumnDef<Paper>[] = [
                 </span>
               </AccordionTrigger>
               <AccordionContent>
+                  {
+                    (row.getValue("Paper") as any)?.Venue && (
+                      <div className="text-wrap pb-1">
+                        <span className="pr-4 font-medium">  
+                            Venue
+                        </span>
+                        <span className="text-stone-700">{(row.getValue("Paper") as any)?.Venue}</span>
+                      </div>
+                    )
+                  }
                   {/* {
                     (row.getValue("Paper") as any)?.Authors && (
                       <div className="text-wrap pb-1">
@@ -210,12 +220,22 @@ const paperDataColumns: ColumnDef<Paper>[] = [
     enableHiding: false,
   },
   {
+    accessorKey: "Venue",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Venue" />
+    ),
+    cell: ({ row }) => {
+      return <div className="w-[40px]">{row.getValue("Venue")}</div>;
+    },
+    enableHiding: false,
+  },
+  {
     accessorKey: "Year",
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Year" />
     ),
     cell: ({ row }) => {
-      return <div className="w-[80px]">{row.getValue("Year")}</div>;
+      return <div className="w-[60px]">{row.getValue("Year")}</div>;
     },
     enableHiding: false,
   },

@@ -5,6 +5,7 @@ const defaultFields = {
   Paper: z.string(),
   URL: z.string(),
   Year: z.number(),
+  Venue: z.string(),
   ID: z.string(),
   Authors: z.string().optional(),
   Abstract: z.string().optional(),

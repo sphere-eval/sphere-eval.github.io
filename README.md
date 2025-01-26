@@ -1,15 +1,17 @@
-# A Design Space for Intelligent and Interactive Writing Assistants
+# SPHERE: An Evaluation Card for Human-AI Systems
 
-This is the repository for the website of the paper [A Design Space for Intelligent and Interactive Writing Assistants (Lee et al., CHI 2024)](https://arxiv.org/abs/2403.14117). The website is hosted at [https://writing-assistant.github.io/](https://writing-assistant.github.io/).
+This is the repository for the website of the paper [SPHERE: An Evaluation Card for Human-AI Systems
+ (Ma & Zhao, et al., 2025)](). 
 
 ---
 
 ## How to Add Your Paper
 
-***If you have paper(s) that design, use, or evaluate writing assistant(s), we would love to feature them on our website!***
+***If you have paper(s) that evaluate human-AI system(s), we would love to feature them on our website!***
 
 * If you are familiar with Github, you can create a pull request (PR) to update `./data/annotated_papers.csv` in this repository.
-* Otherwise, please fill out [this Google form](https://forms.gle/auceKL8yv9t1pgJaA).
+* Otherwise, please fill out [this Google form]().
+
 
 We will try to monitor the form and PR regularly, but in case there is considerable delay, please feel free to send an email to Mina.
 
@@ -20,8 +22,8 @@ For those who have direct edit access to the repository, you can follow the step
 
 #### Contact
 
-* Maintenance: [Mina Lee](https://minalee.info/) \<mnlee@uchicago.edu\>
-* Designer: [Shannon Zejiang Shen](https://www.szj.io/) \<zjshen@mit.edu\>
+* [Qianou Ma](https://qianouma.com/) \<qianouma@cmu.edu\>
+* [Dora Zhao](https://dorazhao99.github.io/) \<dorothyz@stanford.edu\>
 
 ---
 
@@ -29,18 +31,13 @@ For those who have direct edit access to the repository, you can follow the step
 
 ***We welcome your feedback and contribution!***
 
-#### Features in the wishlist 
-Last updated: May 6, 2024
-
-* Add authors to the table and enable search based on authors
-
 #### Running the website locally
 
 1. Clone the repository
 
 ```bash
-git clone https://github.com/writing-assistant/writing-assistant.github.io.git
-cd writing-assistant.github.io
+git clone 
+cd 
 ```
 
 2. Install required libraries
@@ -74,4 +71,4 @@ To learn more about Next.js, take a look at the following resources:
 
 ## Acknowledgements
 
-Our design and code is heavily inspired by the [shadcn/ui](https://ui.shadcn.com/) website. 
+This website/repo is adapted from [https://writing-assistant.github.io/](https://writing-assistant.github.io/).
