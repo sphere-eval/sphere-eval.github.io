@@ -35,6 +35,8 @@ import {
   PageHeaderHeading,
 } from "./components/page-header";
 
+import { CardWithForm } from "./components/card";
+
 import TaskPage from "./paper";
 import next from "next";
 
@@ -162,14 +164,11 @@ const Headline = () => (
     </div>
     
     {/* TODO: add an interface to create an eval card using llm */}
-
-    <div className="dsiiwa-figure pt-8">
-      <Image
-          src="/images/eval-card.png"
-          width={400}
-          height={500}
-          alt="The figure shows the integrated evaluation card for writing assistants. It is comprised of five boxes, Ecosystem, Task, User, Interaction, and Technology. \n Ecosystem is the biggest box that surrounds the rest, and has the following items: Digital infrastructure (e.g., usability consistency, technical interoperability), Social factors (e.g., designing with stakeholders, desigining for social writing), Locale (e.g., local writing, remote writing), Access model (e.g., free and/or open-source software, commercial software), Norms and Rules (e.g., laws, conventions), and Change over time (e.g., authors, readers, writing, information environment). \n The top part inside Ecosystem box is occupied by Task box, which overlaps with User, Interaction, and Technology boxes. Task box has the following items: Writing stage (e.g., planning, drafting, revision), Writing context (e.g., academic, journalistic, technical), Purpose (e.g., expository, narrative, descriptive), Specificity (e.g., general direction, detailed requirements), and Audience (e.g., specified, implied).\n Interaction box is positioned in the middle of the User and Technology boxes, with arrows connecting to and from these boxes. Interaction has the following points: User - Steering the system (e.g., explicit, implicit, no control), User - Integrating system output (e.g., selection,  inspiration), UI - Interface paradigm (e.g., text editor, chatbot),  UI - Layout (e.g., writing area, separated, input UI), UI - Visual differentiation (e.g., formatting, location), UI - Interaction metaphor (e.g., agent, tool, hybrid), UI - Initiation (e.g., user-initiated, system-initiated), Technology - Output type (e.g., analysis, generation), Technology - Curation type (e.g., deterministic, curated options), and Technology - User Data access (e.g., input text, additional data). \n User box is on the left of the Interaction box, with the following points: Demographic profile (e.g., age, language and culture), User capabilities (e.g., writing expertise, efficiency), Relationship to system (e.g., agency, ownership, trust), and System output preferences (e.g., coherence, diversity). \n Technology box is on the left of Interaction box and below the User box, with the following points: Data - Source (e.g., experts, users), Data - Size (e.g., small, medium, large), Model - Type (e.g., rule-based, foundation models), Model - External resource access (e.g., tool, data), Learning - Problem (e.g., classification, generation), Learning - Algorithm (e.g., supervised, unsupervised), Learning - Training and adaptation (e.g., fine-tuning, prompting), Evaluation - Evaluator (e.g., automatic, machine-learned), Evaluation - Focus (e.g., linguistic quality, controllability), and Scalability (e.g., cost, latency)."
-          // className="block"
+    <div className="pt-8 flex flex-wrap justify-center items-center space-x-5">
+      <CardWithForm />
+      {/* <div className="dsiiwa-figure pt-8"> */}
+      <Image src="/images/eval-card.png" width={450} height={500}
+          alt="The figure shows the SPHERE evaluation card for human-AI systems, which includes five dimensions: What, How, Who, When, and (Meta) How the evaluation is conducted."
       />
     </div>
 

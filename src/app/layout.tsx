@@ -9,8 +9,8 @@ import ReactGA from "react-ga4";
 ReactGA.initialize("G-9CQYSNQGVD");
 
 export const metadata: Metadata = {
-  title: "A Design Space for Intelligent and Interactive Writing Assistants",
-  description: "", // #TODO
+  title: "SPHERE: Evaluation Card for Human-AI Systems",
+  description: "Essential questions to ask when evaluating human-AI systems.",
 };
 
 const fontSans = FontSans({
