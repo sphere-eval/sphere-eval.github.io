@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import dynamic from "next/dynamic";
-import React, { RefObject, useEffect, useRef, useState } from "react";
+import React from "react";
 
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -18,34 +17,23 @@ import {
   HoverCardContent,
 } from "@/components/ui/hover-card";
 
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 import {
   PageHeader,
-  PageHeaderDescription,
   PageHeaderHeading,
 } from "./components/page-header";
 
-import { CardWithForm } from "./components/card";
+import { CardWithForm } from "./components/card-form";
+import { CardTemplate, AngleKindling } from "./components/card-display";
 
 import TaskPage from "./paper";
-import next from "next";
 
 const TITLE = "SPHERE: An Evaluation Card for Human-AI Systems";
 
 const FORM_URL = ""; //"https://forms.gle/iyk5DiECGDdc9vSQA";
 const PAPER_URL = ""; // "http://arxiv.org/abs/2403.14117";
 const GITHUB_URL = ""; // "https://github.com/writing-assistant/writing-assistant.github.io";
-const BASE_PATH = "";
 
 interface Author {
   name: string;
@@ -147,32 +135,53 @@ const Headline = () => (
     <div className="pt-4 font-sans">
       <p className="pb-4">Welcome to our SPHERE evaluation card for human-AI systems! 
       The <span className="font-bold">SPHERE</span> evaluation card consists of five dimensions (five leading questions): 
+      </p>
+      <ol className="list-decimal pl-4">
+        <li><span className="sphere-what-color font-bold"> What</span> is being evaluated?</li>
+        <li><span className="sphere-how-color font-bold"> How</span> is the evaluation conducted?</li>
+        <li><span className="sphere-who-color font-bold"> Who</span> is participating in the evaluation?</li>
+        <li><span className="sphere-when-color font-bold"> When</span> is evaluation conducted (duration)?</li>
+        <li><span className="sphere-metahow-color font-bold"> (Meta) How</span> is evaluation validated?</li>
+      </ol>
+      {/* <p>
       <span className="sphere-what-color font-bold"> What</span> is being evaluated? 
       <span className="sphere-how-color font-bold"> How</span> is the evaluation conducted?
       <span className="sphere-who-color font-bold"> Who</span> is participating in the evaluation?
       <span className="sphere-when-color font-bold"> When</span> is evaluation conducted (duration)? and
       <span className="sphere-metahow-color font-bold"> (Meta) How</span> is evaluation validated?
-      
+      </p> */}
+      <p className="pt-4">
       Within each dimension, we define category (i.e., fundamental components of an dimension) and aspect (i.e., potential options for each category). 
       Please refer to <a href={PAPER_URL} target="_blank" className="dsiiwa-link">our paper</a> for the detailed definitions.
-      </p>
       
-      <p className="pb-4">To create this evaluation card, we collaborated with researchers from a variety of disciplines, including Human-Computer Interaction (HCI), Natural Language Processing (NLP), Information Systems, and Education, and annotated 39 papers from HCI and NLP fields to understand the current landscape of human-LLM systems. 
-      We hope SPHERE offers researchers and developers a practical tool a design and document human-AI system evaluation. As a design tool, SPHERE helps structure conversations around key areas of evaluation to consider. As a documentation tool, SPHERE contributes to the transparency and reproducibility of evaluation methods.</p>
+      Here we also provide an interface to help you <span className="font-bold">create your own evaluation card using SPHERE</span>. We invite the community to contribute by adding new papers, annotations, and discussions to track future developments in this space.
+      </p>
 
-      <p className="pb-4">Here we also provide an interface to help you <span className="font-bold">create your own evaluation card using SPHERE</span>. We invite the community to contribute by adding new papers, annotations, and discussions to track future developments in this space.</p>
     </div>
     
-    {/* TODO: add an interface to create an eval card using llm */}
-    <div className="pt-8 flex flex-wrap justify-center items-center space-x-5">
+    {/* TODO: create an eval card using llm? */}
+    <div className="pt-8 flex flex-wrap justify-center items-start space-x-5">
       <CardWithForm />
-      {/* <div className="dsiiwa-figure pt-8"> */}
-      <Image src="/images/eval-card.png" width={450} height={500}
-          alt="The figure shows the SPHERE evaluation card for human-AI systems, which includes five dimensions: What, How, Who, When, and (Meta) How the evaluation is conducted."
-      />
+      <Tabs defaultValue="template" className="w-[420px]">
+        <TabsList>
+          <TabsTrigger value="template">View Template</TabsTrigger>
+          <TabsTrigger value="example">View Example</TabsTrigger>
+        </TabsList>
+        <TabsContent value="template">
+          <Image src="/images/eval-card.png" width={450} height={500}
+            alt="The figure shows the SPHERE evaluation card for human-AI systems, which includes five dimensions: What, How, Who, When, and (Meta) How the evaluation is conducted."
+          />
+        </TabsContent>
+        <TabsContent value="example">
+          <CardTemplate {...AngleKindling} />
+        </TabsContent>
+      </Tabs>
     </div>
 
     <div className="pt-8 font-sans">
+      <p className="pb-4">To create this evaluation card, we collaborated with researchers from a variety of disciplines, including Human-Computer Interaction (HCI), Natural Language Processing (NLP), Social Computing, ML fairness, and Education, and annotated 39 papers from HCI and NLP fields to understand the current landscape of human-LLM systems. 
+      We hope SPHERE offers researchers and developers a practical tool a design and document human-AI system evaluation. As a design tool, SPHERE helps structure conversations around key areas of evaluation to consider. As a documentation tool, SPHERE contributes to the transparency and reproducibility of evaluation methods.</p>
+      
       <ul className="list-disc pl-4">
         <li><span className="font-bold">Want to add your paper to the list?</span> Please either (i) fill out <a href={FORM_URL} target="_blank" className="form-link">this Google form <span style={{ display: 'inline-block', transform: "translateY(0.5px)" }}><ClipboardIcon /></span></a> or (ii) create a pull request in <a href={GITHUB_URL} target="_blank" className="dsiiwa-link">our GitHub repository <span style={{ display: 'inline-block', transform: "translateY(0.5px)" }}><GitHubLogoIcon /></span></a></li>
         <li><span className="font-bold">Have questions or found incorrect annotation?</span> Please email Qianou Ma <a href="mailto:qianouma@cmu.edu" className="dsiiwa-link"> <span style={{ display: 'inline-block', transform: "translateY(1px)" }}><EnvelopeClosedIcon/></span></a> or Dora Zhao <a href="mailto:dorothyz@stanford.edu" className="dsiiwa-link"> <span style={{ display: 'inline-block', transform: "translateY(1px)" }}><EnvelopeClosedIcon/></span></a></li>
