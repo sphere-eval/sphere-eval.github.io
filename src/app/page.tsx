@@ -25,7 +25,8 @@ import {
 } from "./components/page-header";
 
 import { CardWithForm } from "./components/card-form";
-import { CardTemplate, AngleKindling } from "./components/card-display";
+import { CardTemplate } from "./components/card-display";
+import { AngleKindling } from "./components/templates-variables";
 
 import TaskPage from "./paper";
 
@@ -143,13 +144,6 @@ const Headline = () => (
         <li><span className="sphere-when-color font-bold"> When</span> is evaluation conducted (duration)?</li>
         <li><span className="sphere-metahow-color font-bold"> (Meta) How</span> is evaluation validated?</li>
       </ol>
-      {/* <p>
-      <span className="sphere-what-color font-bold"> What</span> is being evaluated? 
-      <span className="sphere-how-color font-bold"> How</span> is the evaluation conducted?
-      <span className="sphere-who-color font-bold"> Who</span> is participating in the evaluation?
-      <span className="sphere-when-color font-bold"> When</span> is evaluation conducted (duration)? and
-      <span className="sphere-metahow-color font-bold"> (Meta) How</span> is evaluation validated?
-      </p> */}
       <p className="pt-4">
       Within each dimension, we define category (i.e., fundamental components of an dimension) and aspect (i.e., potential options for each category). 
       Please refer to <a href={PAPER_URL} target="_blank" className="dsiiwa-link">our paper</a> for the detailed definitions.
@@ -162,13 +156,13 @@ const Headline = () => (
     {/* TODO: create an eval card using llm? */}
     <div className="pt-8 flex flex-wrap justify-center items-start space-x-5">
       <CardWithForm />
-      <Tabs defaultValue="template" className="w-[420px]">
+      <Tabs defaultValue="template" className="w-[500px]">
         <TabsList>
           <TabsTrigger value="template">View Template</TabsTrigger>
           <TabsTrigger value="example">View Example</TabsTrigger>
         </TabsList>
         <TabsContent value="template">
-          <Image src="/images/eval-card.png" width={450} height={500}
+          <Image src="/images/eval-card.png" width={420} height={500}
             alt="The figure shows the SPHERE evaluation card for human-AI systems, which includes five dimensions: What, How, Who, When, and (Meta) How the evaluation is conducted."
           />
         </TabsContent>

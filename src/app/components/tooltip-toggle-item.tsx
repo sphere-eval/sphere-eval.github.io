@@ -10,11 +10,12 @@ import {
 interface TooltipToggleItemProps {
   value: string;
   tooltipContent: string;
+  onClick?: () => void;
 }
 
-const TooltipToggleItem = ({ value, tooltipContent }: TooltipToggleItemProps) => {
+const TooltipToggleItem = ({ value, tooltipContent, onClick }: TooltipToggleItemProps) => {
     return (
-    <ToggleGroupItem value={value} aria-label={`Toggle ${value}`}>
+    <ToggleGroupItem value={value} aria-label={`Toggle ${value}`} onClick={onClick}>
       <TooltipProvider>
         <Tooltip delayDuration={500}>
           <TooltipTrigger asChild>
