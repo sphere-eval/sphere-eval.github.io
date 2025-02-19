@@ -102,7 +102,10 @@ const AuthorHoverCard2 = (author: (typeof AUTHORS)[0]) => (
 
 const Headline = () => (
   <PageHeader className="page-header pb-12 pt-4">
-    <PageHeaderHeading className="tracking-tight">{TITLE} </PageHeaderHeading>
+    <div className="flex items-center space-x-4">
+      <Image src="/images/sphere-logo.png" width={60} height={60} alt="SPHERE logo" />
+      <PageHeaderHeading className="tracking-tight">{TITLE} </PageHeaderHeading>
+    </div>
     <Separator className="my-2" />
     <section className="flex w-full items-center space-x-4 pb-1 pt-4 md:pb-1">
       <Link
@@ -153,7 +156,6 @@ const Headline = () => (
 
     </div>
     
-    {/* TODO: create an eval card using llm? */}
     <div className="pt-8 flex flex-wrap justify-center items-start space-x-5">
       <CardWithForm />
       <Tabs defaultValue="template" className="w-[500px]">
