@@ -9,7 +9,7 @@ body:
     id: title
     attributes:
       label: Paper Title
-      placeholder: ex. AI Chains: Transparent and Controllable Human-AI Interaction by Chaining Large Language Model Prompts
+      placeholder: "ex. AI Chains: Transparent and Controllable Human-AI Interaction by Chaining Large Language Model Prompts"
     validations:
       required: true
   - type: input
