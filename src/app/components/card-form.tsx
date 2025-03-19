@@ -65,17 +65,33 @@ export function CardWithForm() {
         aspects={submittedData?.aspects || defaultAspects}
         content={submittedData?.content || defaultContent}
         />
-      {/* use a button to download submittedData as a json file */}
-      <Button onClick={() => {
-        const blob = new Blob([JSON.stringify(submittedData, null, 2)], { type: 'application/json' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'sphere-card.json';
-        a.click();
-        URL.revokeObjectURL(url);
-      }}>Download JSON</Button>
-
+      <div className="flex justify-between">
+        {/* use a button to download submittedData as a json file */}
+        <Button onClick={() => {
+          const blob = new Blob([JSON.stringify(submittedData, null, 2)], { type: 'application/json' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'sphere-card.json';
+          a.click();
+          URL.revokeObjectURL(url);
+        }}>Download JSON</Button>
+        {/* use another button to create an auto-filled github issue using template */}
+        <Button onClick={() => {
+          const sphere_text = `SPHERE Card for ${submittedData?.sysname}:\nWhat is being evaluated?\n${submittedData?.content.what}\nHow is the evaluation conducted?\n${submittedData?.content.how}\nWho is participating in the evaluation?\n${submittedData?.content.who}\nWhen is the evaluation conducted?\n${submittedData?.content.when}\nHow is the evaluation validated?\n${submittedData?.content.metahow}`;
+          const aspects = [
+            `what-component=${['system', 'model'].filter(item => submittedData?.aspects[item as keyof typeof submittedData.aspects]).join(', ')}`,
+            `what-design-goal=${['effectiveness', 'efficiency', 'satisfaction'].filter(item => submittedData?.aspects[item as keyof typeof submittedData.aspects]).join(', ')}`,
+            `how-scope=${['intrinsic', 'extrinsic'].filter(item => submittedData?.aspects[item as keyof typeof submittedData.aspects]).join(', ')}`,
+            `how-method=${['quantitative', 'qualitative'].filter(item => submittedData?.aspects[item as keyof typeof submittedData.aspects]).join(', ')}`,
+            `who-human=${['expert', 'user'].filter(item => submittedData?.aspects[item as keyof typeof submittedData.aspects]).join(', ')}`,
+            `who-automated=${['static', 'generative'].filter(item => submittedData?.aspects[item as keyof typeof submittedData.aspects]).join(', ')}`,
+            `when-timescale=${['immediate', 'shortterm', 'longterm'].filter(item => submittedData?.aspects[item as keyof typeof submittedData.aspects]).join(', ')}`,
+            `meta-how-validation=${['validity', 'reliability'].filter(item => submittedData?.aspects[item as keyof typeof submittedData.aspects]).join(', ')}`,
+          ].filter(param => param.split('=')[1]).join('&');
+          window.open(`https://github.com/sphere-eval/sphere-eval.github.io/issues/new?template=add-a-new-paper.yml&sphere-text=${encodeURIComponent(sphere_text)}&${aspects}`, '_blank');
+        }}>Add Paper to Website</Button>
+      </div>
     </DialogContent>
     </Dialog>
 

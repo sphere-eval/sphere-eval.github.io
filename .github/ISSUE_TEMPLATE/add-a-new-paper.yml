@@ -76,19 +76,19 @@ body:
       label: Aspects for who-human
       placeholder: ex. expert, user
     validations:
-      required: true
+      required: false
   - type: input
     id: who-automated
     attributes:
       label: Aspects for who-automated
       placeholder: ex. static, generative
     validations:
-      required: true
+      required: false
   - type: input
     id: when-timescale
     attributes:
       label: Aspects for when-timescale
-      placeholder: ex. instant, shortterm, longterm
+      placeholder: ex. immediate, shortterm, longterm
     validations:
       required: true
   - type: input
@@ -97,4 +97,4 @@ body:
       label: Aspects for meta-how-validation
       placeholder: ex. validity, reliability
     validations:
-      required: true
+      required: false
