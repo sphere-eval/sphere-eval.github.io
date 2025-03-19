@@ -9,11 +9,12 @@ This is the repository for the website of the paper [SPHERE: An Evaluation Card 
 
 ***If you have paper(s) that evaluate human-AI system(s), we would love to feature them on our website!***
 
-* If you are familiar with Github, you can create a pull request (PR) to update `./data/annotated_papers.csv` in this repository.
-* Otherwise, please fill out [this Google form]().
+* You can use our issue template to `Add a new paper` [here](https://github.com/sphere-eval/sphere-eval.github.io/issues/new/choose).
+* If you have multiple papaers to add, you can create a pull request (PR) to update `./data/annotated_papers.csv` in this repository.
+* Otherwise, you can also use the interface we provide on the website by Export > Add Paper to Website.
 
 
-We will try to monitor the form and PR regularly, but in case there is considerable delay, please feel free to send an email to Mina.
+We will try to monitor the issue and PR regularly, but in case there is considerable delay, please feel free to send an email to us.
 
 For those who have direct edit access to the repository, you can follow the steps below to update the website:
 1. Update `./data/annotated_papers.csv` with the new paper information.

@@ -32,9 +32,9 @@ import TaskPage from "./paper";
 
 const TITLE = "SPHERE: An Evaluation Card for Human-AI Systems";
 
-const FORM_URL = ""; //"https://forms.gle/iyk5DiECGDdc9vSQA";
-const PAPER_URL = ""; // "http://arxiv.org/abs/2403.14117";
-const GITHUB_URL = ""; // "https://github.com/writing-assistant/writing-assistant.github.io";
+const FORM_URL = "https://github.com/sphere-eval/sphere-eval.github.io/issues/new/choose"; 
+const PAPER_URL = "";
+const GITHUB_URL = "https://github.com/sphere-eval/sphere-eval.github.io";
 
 interface Author {
   name: string;
@@ -179,9 +179,8 @@ const Headline = () => (
       We hope SPHERE offers researchers and developers a practical tool a design and document human-AI system evaluation. As a design tool, SPHERE helps structure conversations around key areas of evaluation to consider. As a documentation tool, SPHERE contributes to the transparency and reproducibility of evaluation methods.</p>
       
       <ul className="list-disc pl-4">
-        <li><span className="font-bold">Want to add your paper to the list?</span> Please either (i) fill out <a href={FORM_URL} target="_blank" className="form-link">this Google form <span style={{ display: 'inline-block', transform: "translateY(0.5px)" }}><ClipboardIcon /></span></a> or (ii) create a pull request in <a href={GITHUB_URL} target="_blank" className="dsiiwa-link">our GitHub repository <span style={{ display: 'inline-block', transform: "translateY(0.5px)" }}><GitHubLogoIcon /></span></a></li>
+        <li><span className="font-bold">Want to add your paper to the list?</span> Please either (i) export using the form below, (ii) fill out <a href={FORM_URL} target="_blank" className="form-link">our issue template <span style={{ display: 'inline-block', transform: "translateY(0.5px)" }}><ClipboardIcon /></span></a>, or (iii) create a pull request in <a href={GITHUB_URL} target="_blank" className="dsiiwa-link">our GitHub repository <span style={{ display: 'inline-block', transform: "translateY(0.5px)" }}><GitHubLogoIcon /></span></a></li>
         <li><span className="font-bold">Have questions or found incorrect annotation?</span> Please email Qianou Ma <a href="mailto:qianouma@cmu.edu" className="dsiiwa-link"> <span style={{ display: 'inline-block', transform: "translateY(1px)" }}><EnvelopeClosedIcon/></span></a> or Dora Zhao <a href="mailto:dorothyz@stanford.edu" className="dsiiwa-link"> <span style={{ display: 'inline-block', transform: "translateY(1px)" }}><EnvelopeClosedIcon/></span></a></li>
-        <li><span className="font-bold">Interested in contributing to the project?</span> Please visit <a href={GITHUB_URL} target="_blank" className="dsiiwa-link">our GitHub repository <span style={{ display: 'inline-block', transform: "translateY(0.5px)" }}><GitHubLogoIcon /></span></a> and start contributing!</li>
       </ul>
     </div>
 

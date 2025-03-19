@@ -43,7 +43,7 @@ For each design goal, mark 1 if the authors include evaluation that covers the c
 ### Automated Evaluators
 Use these tags *only* when evaluation not involving human participants is used. 
 1. `who_static`: Mark 1 if any static evaluation not directly performed by a human or LLM is included and 0 if not. For example, benchmarking a model's capability is an example of static evaluation.
-2. `who_generative`: Mark 1 if the authors use a language model in a generative capacity and 0 if not. for evaluation. For example, simulating participants with LLMs, using LLM to annotate and rate text, or using LLM-as-a-judge. Using a technique like BERTScore is *not* generative since it is embedding-based. 
+2. `who_generative`: Mark 1 if the authors use a language model in a generative capacity and 0 if not for evaluation. For example, simulating participants with LLMs, using LLM to annotate and rate text, or using LLM-as-a-judge. Using a technique like BERTScore is *not* generative since it is embedding-based. 
 
 ### Human Evaluators
 Use these tags *only* when human evaluation is used. 

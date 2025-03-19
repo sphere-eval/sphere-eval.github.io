@@ -1,6 +1,6 @@
 name: Add a new paper
 description: Add a new human-AI system paper to the list of Annotated papers on the SPHERE website.
-title: "Add a new paper [title]"
+title: "Add a new paper [System Name]"
 labels: new paper
 assignees: 
  - dorazhao99
@@ -42,85 +42,59 @@ body:
       placeholder: See our paper.
     validations:
       required: false
-  - type: dropdown
+  - type: input
     id: what-component
     attributes:
       label: Aspects for what-component
-      multiple: true
-      options:
-        - model
-        - system
+      placeholder: ex. model, system
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: what-design-goal
     attributes:
       label: Aspects for what-design-goal
-      multiple: true
-      options:
-        - effectiveness
-        - efficiency
-        - satisfaction
+      placeholder: ex. effectiveness, efficiency, satisfaction
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: how-scope
     attributes:
       label: Aspects for how-scope
-      multiple: true
-      options:
-        - intrinsic
-        - extrinsic
+      placeholder: ex. intrinsic, extrinsic
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: how-method
     attributes:
       label: Aspects for how-method
-      multiple: true
-      options:
-        - quantitative
-        - qualitative
+      placeholder: ex. quantitative, qualitative
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: who-human
     attributes:
       label: Aspects for who-human
-      multiple: true
-      options:
-        - expert
-        - user
+      placeholder: ex. expert, user
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: who-automated
     attributes:
       label: Aspects for who-automated
-      multiple: true
-      options:
-        - static
-        - generative
+      placeholder: ex. static, generative
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: when-timescale
     attributes:
       label: Aspects for when-timescale
-      multiple: true
-      options:
-        -  instant
-        -  shortterm
-        -  longterm
+      placeholder: ex. instant, shortterm, longterm
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: meta-how-validation
     attributes:
       label: Aspects for meta-how-validation
-      multiple: true
-      options:
-        - validity
-        - reliability
+      placeholder: ex. validity, reliability
     validations:
       required: true
