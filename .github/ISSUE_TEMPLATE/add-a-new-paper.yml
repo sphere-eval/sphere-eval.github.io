@@ -1,9 +1,10 @@
 name: Add a new paper
-about: Add a new human-AI system paper to the SPHERE website.
-description: Add to the list of Annotated papers
-title: Add a new paper [title]
+description: Add a new human-AI system paper to the list of Annotated papers on the SPHERE website.
+title: "Add a new paper [title]"
 labels: new paper
-assignees: dorazhao99, mqo00
+assignees: 
+ - dorazhao99
+ - mqo00
 body:
   - type: input
     id: title
