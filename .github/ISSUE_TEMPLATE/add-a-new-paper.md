@@ -1,0 +1,130 @@
+---
+name: Add a new paper
+about: Add a new human-AI system paper to the SPHERE website.
+title: Add a new paper [title]
+labels: new paper
+assignees: dorazhao99, mqo00
+
+---
+
+name: Add a new paper
+description: Add a new human-AI system paper to the SPHERE website.
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Paper Title
+      placeholder: ex. AI Chains: Transparent and Controllable Human-AI Interaction by Chaining Large Language Model Prompts
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Paper URL
+      placeholder: ex. https://doi.org/10.1145/3491102.3517582
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: Paper Year
+      placeholder: ex. 2022
+    validations:
+      required: true
+  - type: input
+    id: venue
+    attributes:
+      label: Paper Venue (HCI or NLP)
+      placeholder: ex. HCI
+    validations:
+      required: true
+  - type: textarea
+    id: sphere-text
+    attributes:
+      label: SPHERE Eval Card Text
+      description: The answer to what, how, who, when, meta-how evaluation questions.
+      placeholder: See our paper.
+    validations:
+      required: false
+  - type: dropdown
+    id: what-component
+    attributes:
+      label: Aspects for what-component
+      multiple: true
+      options:
+        - model
+        - system
+    validations:
+      required: true
+  - type: dropdown
+    id: what-design-goal
+    attributes:
+      label: Aspects for what-design-goal
+      multiple: true
+      options:
+        - effectiveness
+        - efficiency
+        - satisfaction
+    validations:
+      required: true
+  - type: dropdown
+    id: how-scope
+    attributes:
+      label: Aspects for how-scope
+      multiple: true
+      options:
+        - intrinsic
+        - extrinsic
+    validations:
+      required: true
+  - type: dropdown
+    id: how-method
+    attributes:
+      label: Aspects for how-method
+      multiple: true
+      options:
+        - quantitative
+        - qualitative
+    validations:
+      required: true
+  - type: dropdown
+    id: who-human
+    attributes:
+      label: Aspects for who-human
+      multiple: true
+      options:
+        - expert
+        - user
+    validations:
+      required: true
+  - type: dropdown
+    id: who-automated
+    attributes:
+      label: Aspects for who-automated
+      multiple: true
+      options:
+        - static
+        - generative
+    validations:
+      required: true
+  - type: dropdown
+    id: when-timescale
+    attributes:
+      label: Aspects for when-timescale
+      multiple: true
+      options:
+        -  instant
+        -  shortterm
+        -  longterm
+    validations:
+      required: true
+  - type: dropdown
+    id: meta-how-validation
+    attributes:
+      label: Aspects for meta-how-validation
+      multiple: true
+      options:
+        - validity
+        - reliability
+    validations:
+      required: true
