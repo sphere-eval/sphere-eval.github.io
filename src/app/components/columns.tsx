@@ -108,11 +108,11 @@ const paperDataColumns: ColumnDef<Paper>[] = [
     cell: ({ row, cell }) => {
       return (
         <div className="flex space-x-2 justify-start">
-          <div className="max-w-[640px] min-w-[480px]">
+          <div className="min-w-[480px]">
             <Accordion type="single" collapsible>
             <AccordionItem value={`${row.getValue("Paper")}`}>
               <AccordionTrigger>
-                <span className="max-w-[640px] min-w-[480px] truncate font-medium">
+                <span style={{display: 'inline-block', textAlign: 'left'}} className="min-w-[480px] text-wrap font-medium">
                 {(row.getValue("Paper") as any)?.Paper.replace(/\{([^}]+)\}/g, '$1')}
                 </span>
               </AccordionTrigger>
