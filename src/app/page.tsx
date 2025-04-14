@@ -33,7 +33,7 @@ import TaskPage from "./paper";
 const TITLE = "SPHERE: An Evaluation Card for Human-AI Systems";
 
 const FORM_URL = "https://github.com/sphere-eval/sphere-eval.github.io/issues/new/choose"; 
-const PAPER_URL = "";
+const PAPER_URL = "https://arxiv.org/abs/2504.07971";
 const GITHUB_URL = "https://github.com/sphere-eval/sphere-eval.github.io";
 
 interface Author {

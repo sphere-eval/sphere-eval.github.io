@@ -1,7 +1,7 @@
 # SPHERE: An Evaluation Card for Human-AI Systems
 
 This is the repository for the website of the paper [SPHERE: An Evaluation Card for Human-AI Systems
- (Ma & Zhao, et al., 2025)](). 
+ (Ma & Zhao, et al., 2025)](https://arxiv.org/abs/2504.07971). 
 
 ---
 
